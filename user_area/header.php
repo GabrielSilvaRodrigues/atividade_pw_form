@@ -8,9 +8,9 @@
 </head>
 <body>
   <header>
-    <h1>Pro Rank</h1>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <button id="menuToggle">Menu</button>
+      <ul id="menu">
         <li><a href="index.php">Inicio</a></li>
         <li><a href="login.php">Entrar</a></li>
         <li><a href="register.php">Cadastrar-se</a></li>

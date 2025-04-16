@@ -4,3 +4,48 @@ form{
   width: 380px;
   gap: 30px;
 }
+div{
+  background-size: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+body{
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+.navbar{
+  background-color: #333;
+  padding: 10px;
+}
+.navbar button{
+  color: white;
+  background-color: #444;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.navbar ul{
+  list-style-type: none;
+  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
+}
+.navbar li{
+  margin: 5px 0;
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+}
+.hidden{
+  display: none;
+}
+.navbar button:hover{
+  background-color: #555;
+}
+.img_menu{
+  width: 60px;
+  heigth: auto;
+}

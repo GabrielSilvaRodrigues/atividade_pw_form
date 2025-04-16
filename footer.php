@@ -14,5 +14,6 @@
         </form>
       </div>
     </footer>
-  </body>
+  <script src="scripts/scripts.js"></script>
+</body>
 </html>
