@@ -21,13 +21,25 @@
                 if($usuario && password_verify($senha,$usuario[0]['senha_usuario'])){
                     $_SESSION['user_id'] = $usuario[0]['id_usuario'];
                     $_SESSION['user_email'] = $usuario[0]['email_usuario'];
-                    header('Location: user_area/user_area.php');
+                    header('Location: user_area/profissional_area.php');
                     exit();
                 } else{
-                    echo "Senha ou usuario incorretos!";
+                    $sql = "SELECT * FROM empresa WHERE email_empresa=:email";
+                    $stmt = $banco->prepare($sql);
+                    if($stmt){
+                        $stmt->execute([':email'=>$email]);
+                        $usuario = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                        if($usuario && password_verify($senha,$usuario[0]['senha_empresa'])){
+                            $_SESSION['user_id'] = $usuario[0]['id_empresa'];
+                            $_SESSION['user_email'] = $usuario[0]['email_empresa'];
+                            header('Location: empresa_area/empresa_area.php');
+                            exit();
+                        } else{
+                            echo "Senha ou usuario incorretos!";
+                        }
+                    }
                 }
             }
-    
         }
     }
 ?>

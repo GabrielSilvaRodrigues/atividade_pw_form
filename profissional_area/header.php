@@ -9,10 +9,9 @@
 <body>
   <header>
     <nav class="navbar">
-      <button id="menuToggle"><image class="img_menu" src="assents/pro_rank_icon.png"></button>
+      <button id="menuToggle">Menu</button>
       <ul id="menu">
-        <li><a href="user_area.php">Inicio</a></li>
+        <li><a href="profissional_area.php">Inicio</a></li>
       </ul>
     </nav>
   </header>
-										
